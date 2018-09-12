@@ -180,7 +180,7 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 60px;
 }
 </style>
 </header>
@@ -223,6 +223,10 @@ function showPage() {
 
 <div class="container">
   <form action="/action_page.php">
+  <table class="container" width = '100%'>
+	<tr>
+		<td width='50%'></td>
+		<td width='50%'>
     <label for="fname">Full Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name... John Doe">
 	
@@ -295,6 +299,9 @@ function showPage() {
     <textarea id="subject" name="subject" placeholder="Write something... Anything" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
+	  </td>
+  	</tr>
+  </table>
   </form>
 </div>
 </table>
