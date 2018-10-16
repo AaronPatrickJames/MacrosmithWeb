@@ -98,6 +98,11 @@ table.background {
     background-size: cover;
 }
 
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
 .top-container {
   background-color: #002E5D;
   padding: 0px;
@@ -122,8 +127,9 @@ table.background {
 }
 
 .sticky + .content {
-  padding-top: 0px;
+  padding-top: 60px;
 }
+
 font.strokeme{
     color: white;
     text-shadow:
@@ -163,6 +169,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
 </script>
 
 <body onload="thisismyFunction()" style="margin:0;">
@@ -178,9 +185,9 @@ function showPage() {
 </table>
 </div>
 <div class="top-container">
-</div>
+</div> 
 
-<div class="header sticky" id="myHeader">
+<div id="navbar" class>
 	<table>
 		<tr>
 			<td width='35%' align='center'><img src="Macrosmith.png" width='50%' height='auto'></td>
@@ -386,20 +393,20 @@ Not only is electronic document management great for your business, it’s also 
 </table>
 </div>
 </div>
-</body>
 
 <script>
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    navbar.classList.remove("sticky");
   }
 }
 </script>
+</body>
 </html>
