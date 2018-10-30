@@ -150,6 +150,38 @@ button:hover {
     background-color: black;
     color: white;
 }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 60px;
+}
 </style>
 </header>
 <script>
@@ -189,193 +221,39 @@ function showPage() {
  </table>
 </div>
 
-
 <div class="content">
-<table width="100%" height="auto" padding-top='10px' padding-bottom='5px'>
-	<tr>
-		<td align="center" width='33%' valign="top"><table><tr>
-															<td align="center" valign='bottom'><img src="Scan.jpg" width='52%' height='auto'></td>
-															</tr>
-															<tr>
-															 <td align="center" valign='top'><h4 style="font-size:1vw;">In the United States, businesses spend more than <br>$120 billion a year on printed forms,<br> most of which are outdated in just three months. <br>Electronic document management is a simple alternative <br>to paper filing systems. 
-</h4></td>
-															</tr>
-															</table></td>
-		<td align="center" width='33%' valign="top"><table><tr>
-															<td align="center" valign='bottom'><img src="Store.jpg" width='42%' height='auto'></td>
-															</tr>
-															<tr>
-															 <td align="center" valign='top'><h4 style="font-size:1vw;">Every business, no matter how small, needs a way to manage their records.<br> Paper filing systems take up large amounts of space,<br> are difficult to search through, and can become expensive to upkeep.<br> By switching to an electronic document management system,<br> you can save time, money, and hassle.
-</h4></td>
-															</tr>
-															</table></td>
-		<td align="center" width='33%' valign="top"><table><tr>
-															<td align="center" valign='bottom'><img src="Retrieve.jpg" width='50%' height='auto'></td>
-															</tr>
-															<tr>
-															 <td align="center" valign='top'><h4 style="font-size:1vw;">MacroFile, our electronic document management system,<br> turns your paper records into researchable and editable PDF files.<br> All you have to do is scan the document;<br> your documents are safely stored and<br> can be accessed from any secure server. </h4></td>
-															</tr>
-															</table></td>
-	</tr>
-</table>
+<table width="100%" height="auto" padding-top='10px' padding-bottom='5px' align='center'>
+	<h1>Contact Form</h1>
 
-<div class="parallax3">
-	<table width="100%" height="100%">
-	<tr height='10%'>
-		<td align="center"></td>
-		<td align="center" valign='top'><font class="strokeme" style="font-size:3vw;">The Client Experience</font></td>
-		<td align="center"></td>
-	</tr>
-	<tr height='45%'>
-		<td align="center" width = '33%'>​
-			<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="billmac.png" width='90%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font class='strokeme' style="font-size:1vw;">"I cannot say enough about how helpful and efficient the support is, because, as we all know with implementing any new system, there will always be those times when things don’t always go the way you expect them to. They are always there to assist, no matter what problem may arise."
-<br>-Mary Byrnes, Office Manager, Bill MacDonald Ford</font></td>
-				</tr>
-			</table>
-		</td>
-		<td align="center" width = '33%'>
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="stocker.png" width='80%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font class='strokeme' style="font-size:1vw;">"The MacroFile system is extremely user friendly. Training was done within a matter of minutes for our users."
-<br>-Kim Snook, Service Manager, Stocker Chevrolet/Subaru</font></td>
-				</tr>
-		</table>
-		​</td>
-		<td align="center" width = '33%'>​
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="minooka.png" width='80%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font class="strokeme" style="font-size:1vw;">"It’s making our lives much easier!"
-<br>-Ellen Corbett, Minooka Subaru</font></td>
-				</tr>
-		</table>
-		</td>
-	</tr>
-	<tr height='45%'>
-		<td align="center" width = '33%'>​​
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="Roush.png" width='60%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font class='strokeme' style="font-size:1vw;">"Macrosmith has proved to be a very valuable resource for our online data storage needs. Their tech support team rates  five stars !!"
-<br>-Ed Green, Technology Support Manager, Roush Honda</font></td>
-				</tr>
-		</table>
-		</td>
-		<td align="center" width = '33%'>
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="thomas.png" width='80%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font class='strokeme' style="font-size:1vw;">"The system is working great for us, and our warranty processing company loves it as well."
-<br>-Sandi Fowler, Controller, Thomas Chevrolet</font></td>
-				</tr>
-		</table>
-		​</td>
-		<td align="center" width = '33%'>​
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="place.png" width='70%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'></td>
-				</tr>
-		</table>
-		</td>
-	</tr>
-</table>
+<div class="container">
+  <form action="mailto:ajsoriser@gmail.com" method="post" enctype="text/plain">
+  <table class="container" width = '100%'>
+		<td width='50%' height='100%'>
+			<img src='callingman.jpg' width='95%' height='auto'>
+			</td>
+		<td width='50%'>
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="Name" placeholder="Your name... John Doe">
+	
+	<label for="fname">Company Name</label>
+    <input type="text" id="CName" name="Company Name" placeholder="Your company name.... Macrosmith Inc. ">
+
+    <label for="EMail">Email Address</label>
+    <input type="text" id="EMail" name="Email Address" placeholder="Your@EmailAddress.com... Support@Macrosmith.com">
+	
+	<label for="Phone">Phone Number</label>
+    <input type="text" id="Phone" name="Phone Number" placeholder="Your Phone Number... 814-308-0792 (EXT.)">
+
+
+    <label for="subject">Additional Information</label>
+    <textarea id="subject" name="Information" placeholder="Write something... Anything" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+	  </td>
+  	</tr>
+  </table>
+  </form>
 </div>
-
-<table width="100%" height="110%">
-	<tr height='12%'>
-		<td align="center"></td>
-		<td align="center" valign='top'><font style="font-size:3vw;">Why Macrosmith?</font></td>
-		<td align="center"></td>
-	</tr>
-	<tr height='45%'>
-		<td align="center" width = '33%'>​
-			<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="clutter.jpg" width='70%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font style="font-size:1vw;"><strong>More Productive Work Environment</strong><br>
-A typical employee spends about 40% of his time looking for information locked in filing cabinets. With an electronic document management system, your employees will be able to retrieve documents in seconds using quick web-like searches. No time wasted searching through piles of paper in random file cabinets around your facility. </font></td>
-				</tr>
-			</table>
-		</td>
-		<td align="center" width = '33%'>
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="fed.jpg" width='73%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font style="font-size:1vw;"><strong>Comply with Federal Laws</strong><br>
-Did you know that fines for record-keeping infractions can cost tens of thousands of dollars? Having all of your documents in one, easily accessible place can be very beneficial when it comes to government audits and compliance with federal laws.</font></td>
-				</tr>
-		</table>
-		​</td>
-		<td align="center" width = '33%'>​
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="secure.jpg" width='70%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font style="font-size:1vw;"><strong>Securely Backup Documents</strong><br>
-More than 70% of today’s businesses would fail within three weeks if they suffered a catastrophic loss of paper-based records due to fire or flood. Because your documents are stored online and backed up on our servers, you will never have to worry about losing them due to flood or fire.
-You also have the ability to restrict access based on login information and IP address. This ensures that data is not shared with anyone who does not have permission.</font></td>
-				</tr>
-		</table>
-		</td>
-	</tr>
-	<tr height='45%'>
-		<td align="center" width = '33%'>​​
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="customer.jpg" width='70%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font style="font-size:1vw;"><strong>Better Customer Service</strong><br>
-Large organizations lose a document every 12 seconds. Without the hassle of searching through stacks of paper, information will be easier to find. This allows customer service response times to be much faster.</font></td>
-				</tr>
-		</table>
-		</td>
-		<td align="center" width = '33%'>
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="money.jpg" width='80%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font style="font-size:1vw;"><strong>Cost Effective</strong><br>
-It costs valuable money to pay for storage space and materials. Each four-drawer file cabinet holds an average of 11,000 documents, takes up 9 square feet of floor space and costs $1,500 per year. Maintaining those paper files can become very expensive as companies grow. None of this will be a problem with our fixed cost per month, no matter how much you scan. </font></td>
-				</tr>
-		</table>
-		​</td>
-		<td align="center" width = '33%'>​
-		<table width='80%' height='100%'>
-				<tr height='50%'>
-					<td align='center' valign='bottom'><img src="eco.jpg" width='70%' height='auto'></td>
-				</tr>
-				<tr height='50%'>
-					<td align='center' valign='top'><font style="font-size:1vw;"><strong>Eco-Friendly</strong><br>
-Not only is electronic document management great for your business, it’s also great for the environment. By going paperless, your company can reduce its waste! </font></td>
-				</tr>
-		</table>
-		</td>
-	</tr>
-</table>
 
 <table width="100%" height="auto" bgcolor="#000000">
 	<tr>
@@ -384,7 +262,6 @@ Not only is electronic document management great for your business, it’s also 
 		<td align="center" valign='top' width='25%'><font class='strokeme' style="font-size:3vw;"> Info@Macrosmith.com </font></td>
 	</tr>
 </table>
-</div>
 </div>
 </body>
 

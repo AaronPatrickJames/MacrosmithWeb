@@ -183,11 +183,6 @@ input[type=submit]:hover {
     padding: 60px;
 }
 </style>
-<script>
-	function showalert(){
-	alert("This is a test")
-	}
-</script>
 </header>
 <script>
 var myVar;
@@ -229,32 +224,26 @@ function showPage() {
 
 <div class="content">
 <table width="100%" height="auto" padding-top='10px' padding-bottom='5px' align='center'>
-	<h1>Contact Form</h1>
+	<h1>Demonstration Form</h1>
 
 <div class="container">
   <form action="mailto:ajsoriser@gmail.com" method="post" enctype="text/plain">
   <table class="container" width = '100%'>
-	<tr>
-		<td>
-			<div class="parallax2" height='100%'>
- 
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td width='50%'></td>
+		<td width='50%' height='100%'>
+			<img src='callingman.jpg' width='95%' height='auto'>
+			</td>
 		<td width='50%'>
     <label for="fname">Full Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name... John Doe">
+    <input type="text" id="fname" name="Name" placeholder="Your name... John Doe">
 	
 	<label for="fname">Company Name</label>
     <input type="text" id="CName" name="Company Name" placeholder="Your company name.... Macrosmith Inc. ">
 
     <label for="EMail">Email Address</label>
-    <input type="text" id="EMail" name="EMailAddress" placeholder="Your@EmailAddress.com... Support@Macrosmith.com">
+    <input type="text" id="EMail" name="Email Address" placeholder="Your@EmailAddress.com... Support@Macrosmith.com">
 	
 	<label for="Phone">Phone Number</label>
-    <input type="text" id="Phone" name="PhoneNumber" placeholder="Your Phone Number... 814-308-0792 (EXT.)">
+    <input type="text" id="Phone" name="Phone Number" placeholder="Your Phone Number... 814-308-0792 (EXT.)">
 
     <label for="country">State</label>
     <select name="state" id="state">
@@ -313,7 +302,7 @@ function showPage() {
 </select>
 
     <label for="subject">Additional Information</label>
-    <textarea id="subject" name="subject" placeholder="Write something... Anything" style="height:200px"></textarea>
+    <textarea id="subject" name="Information" placeholder="Write something... Anything" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
 	  </td>
@@ -321,6 +310,14 @@ function showPage() {
   </table>
   </form>
 </div>
+</table>
+
+<table width="100%" height="auto" bgcolor="#000000">
+	<tr>
+		<td align="center" valign='top' width='25%' height='auto'><img src="Macrosmith.png" width='75%' height='auto'></td>
+		<td align="center" valign='top' width='25%'><font class='strokeme' style="font-size:1vw;">1981 Cato Avenue,<br>State College, PA 16801<br>(814) 308-0792</font></td>
+		<td align="center" valign='top' width='25%'><font class='strokeme' style="font-size:3vw;"> Info@Macrosmith.com </font></td>
+	</tr>
 </table>
 
 </div>

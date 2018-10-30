@@ -87,7 +87,7 @@ table.background {
 }
 .parallax3 { 
     /* The image used */
-    background-image: url("background-beautiful-blossom-268533.jpg");
+    background-image: url("asphalt-auto-automobile-226460.jpg");
 
     /* Set a specific height */
     height: 100%; 
@@ -169,6 +169,17 @@ function thisismyFunction() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
+}
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 
 </script>
