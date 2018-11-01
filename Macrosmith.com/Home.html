@@ -174,14 +174,13 @@ var i = 0;
 var txt = 'ELECTRONIC DOCUMENT MANAGEMENT';
 var speed = 50;
 
-window.load(function typeWriter() {
+function typeWriter() {
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
-})
-
+}
 </script>
 
 <body onload="thisismyFunction()" style="margin:0;">
@@ -191,11 +190,11 @@ window.load(function typeWriter() {
 <table width="100%" height="100%">
 	<tr>
 		<td align="center"></td>
-		<td align="center"><img src="TypingLogo.png" width="75%">
+		<td align="center"><img src="TypingLogo.png" width="75%" id='intrologo'>
 			<table>
 				<tr>
 					<td width='50%'></td>
-					<td width='50%'><p id="demo"></p></td>
+					<td width='50%'><font id="demo" color='#002e5d' style="font-size:35px"></font></td>
 				</tr>
 			</table>
 		</td>
@@ -406,7 +405,7 @@ Not only is electronic document management great for your business, it’s also 
 <table width="100%" height="auto" bgcolor="#000000">
 	<tr>
 		<td align="center" valign='top' width='25%' height='auto'><img src="Macrosmith.png" width='75%' height='auto'></td>
-		<td align="center" valign='top' width='25%'><font class='strokeme' style="font-size:1vw;">1981 Cato Avenue,<br>State College, PA 16801<br>(814) 308-0792</font></td>
+		<td align="center" valign='top' width='25%'><font class='strokeme' style="font-size:1vw;">1981 Cato Avenue, State College, PA 16801<br>Support: (814) 308-0792 <br> Sign Up: (814) 308-0788 </font></td>
 		<td align="center" valign='top' width='25%'><font class='strokeme' style="font-size:3vw;"> Info@Macrosmith.com </font></td>
 	</tr>
 </table>
@@ -426,6 +425,8 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+document.getElementById("intrologo").addEventListener("load", setTimeout(typeWriter, 3750))
 </script>
 </body>
 </html>
