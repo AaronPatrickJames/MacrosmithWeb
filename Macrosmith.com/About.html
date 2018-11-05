@@ -28,6 +28,14 @@
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
+font.strokeme{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -87,10 +95,23 @@ table.background {
 }
 .parallax3 { 
     /* The image used */
-    background-image: url("blueskys.jpg");
+    background-image: url("graytrans.jpg");
 
     /* Set a specific height */
-    height: 80%; 
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 { 
+    /* The image used */
+    background-image: url("banner.jpg");
+
+    /* Set a specific height */
+    height: 1%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -116,6 +137,7 @@ table.background {
   padding: 0px;
 }
 
+
 .sticky {
   position: fixed;
   top: 0;
@@ -124,14 +146,6 @@ table.background {
 
 .sticky + .content {
   padding-top: 0px;
-}
-font.strokeme{
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
 }
 button {
     background-color: Transparent;
@@ -188,40 +202,40 @@ function showPage() {
 		</tr>
  </table>
 </div>
-<div class="parallax3" width='100%'>
-<table width='100%' height=50%>
+
+
+<table width='100%' height='40%'>
 	<tr width='100%' height='40%'>
-		<td align='center' width='33%'><font size='7'><strong>Customer Support</strong></font><br><br>
-										<font size='4'><strong>Who do I contact for technical support?</strong><br></font>
-										<font>You can contact our support team at support@macrosmith.com, or call 814-308-0792.</font></td>
-		<td align='center'><font size='7'><strong>Equipment Specifications</strong></font><br><br>
-							<font size='4'><strong>What type of scanner do I need, and where can I get one?</strong></font><br>
-							<font>We recommend Fujitsu scanners. They can scan 60 pages per minute, have a long lifetime, and are so small you’ll hardly notice them on your desk. You can shop around here.<font><br>
-							<font size='4'><strong>How long will my scanner last?</strong></font><br>
-							<font>We have some clients who have scanned over a million documents and their scanners are still running!</font></td>
-		<td align='center' width='33%'><font size='7'><strong>Integrations</strong></font><br><br>
-										<font size='4'><strong>I am an auto dealer, what happens if I want to change DMS provider?</strong></font><br>
-										<font>We are independent of DMS providers. If you decide to switch, we can update your integration options without losing any of your data.</font></td>
+		<td align='center' width='33%'><img src ='support.jpg' width = '80%' height='20%'> <br><font size='7' class='strokeme'><strong>Customer Support</strong></font><br><br>
+										<font size='4' class='strokeme'><strong>Who do I contact for technical support?</strong><br></font>
+										<font class='strokeme'>You can contact our support team at support@macrosmith.com, or call 814-308-0792.</font></td>
+		<td align='center'><img src='equip.jpg' width='80%' height='16%'><br><font size='7' class='strokeme'><strong>Equipment Specifications</strong></font><br><br>
+							<font size='4' class='strokeme'><strong>What type of scanner do I need, and where can I get one?</strong></font><br>
+							<font class='strokeme'>We recommend Fujitsu scanners. They can scan 60 pages per minute, have a long lifetime, and are so small you’ll hardly notice them on your desk. You can shop around here.<font><br>
+							<font size='4' class='strokeme'><strong>How long will my scanner last?</strong></font><br>
+							<font class='strokeme'>We have some clients who have scanned over a million documents and their scanners are still running!</font></td>
+		<td align='center' width='33%'><img src='int.jpg' width='80%' height='19%'><br><font size='7' class='strokeme'><strong>Integrations</strong></font><br><br>
+										<font size='4' class='strokeme'><strong>I am an auto dealer, what happens if I want to change DMS provider?</strong></font><br>
+										<font class='strokeme'>We are independent of DMS providers. If you decide to switch, we can update your integration options without losing any of your data.</font></td>
 	</tr>
 </table>
 <table height='50%'>
 	<tr width='100%' height='40%'>
-		<td align='center' width='50%'><font size='7'><strong>Technical Details</strong></font><br><br>
-										<font size='4'><strong></strong>Where can I access the MacroFile system?</font><br>
-										<font>MacroFile can be accessed from any secure web browser on desktops or laptops.</font><br>
-										<font size='4'><strong>What web browsers work best with the MacroFile system?</strong></font><br>
-										<font>The MacroFile system works on all of the main web browsers, including Safari, Internet Explorer, Chrome, and Firefox.</font><br>
-										<font size='4'><strong>How is my data kept safe and secure?</strong></font><br>
-										<font>Your documents are saved to the servers in our data warehouse at our corporate office in State College, PA. Copies of your data are also saved online, on a mirrored server at another location, and on our nightly back up. If data is destroyed, we can restore it within 48 hours.</font><br>
+		<td align='center' width='50%'><img src='Teamwork.jpg' width='40%' height='10%'><br><font size='7' class='strokeme'><strong>Technical Details</strong></font><br><br>
+										<font size='4' class='strokeme'><strong></strong>Where can I access the MacroFile system?</font><br>
+										<font class='strokeme'>MacroFile can be accessed from any secure web browser on desktops or laptops.</font><br>
+										<font size='4' class='strokeme'><strong>What web browsers work best with the MacroFile system?</strong></font><br>
+										<font class='strokeme'>The MacroFile system works on all of the main web browsers, including Safari, Internet Explorer, Chrome, and Firefox.</font><br>
+										<font size='4' class='strokeme'><strong>How is my data kept safe and secure?</strong></font><br>
+										<font class='strokeme'>Your documents are saved to the servers in our data warehouse at our corporate office in State College, PA. Copies of your data are also saved online, on a mirrored server at another location, and on our nightly back up. If data is destroyed, we can restore it within 48 hours.</font><br>
 										</td>
-		<td align='center' width='50%'><font size='7'><strong>Your Account</strong></font><br><br>
-										<font size='4'><strong>How does your pricing work?</strong></font><br>
-										<font>We offer a fixed cost per month price system. No matter how many documents you scan, the price remains the same.</font><br>
-​										<font size='4'><strong>What happens if I want to terminate my contract?</strong></font><br>
-										<font>We operate using perpetual contracts, so all we need is 60 days notice of termination. You own your data, and it will be returned to you non-encrypted.</font></td>
+		<td align='center' width='50%'><img src='Account.jpg' width='35%' height='15%'><br><font size='7' class='strokeme'><strong>Your Account</strong></font><br><br>
+										<font size='4' class='strokeme'><strong>How does your pricing work?</strong></font><br>
+										<font class='strokeme'>We offer a fixed cost per month price system. No matter how many documents you scan, the price remains the same.</font><br>
+​										<font size='4' class='strokeme'><strong>What happens if I want to terminate my contract?</strong></font><br>
+										<font class='strokeme'>We operate using perpetual contracts, so all we need is 60 days notice of termination. You own your data, and it will be returned to you non-encrypted.</font></td>
 	</tr>
 </table>
-</div>
 <table width="100%" height="auto" bgcolor="#000000">
 	<tr>
 		<td align="center" valign='top' width='25%' height='auto'><img src="Macrosmith.png" width='75%' height='auto'></td>
